@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css');
+.editor-styles-wrapper { font-family: 'Montserrat', sans-serif; }
+.editor-styles-wrapper h1, 
+.editor-styles-wrapper h2, 
+.editor-styles-wrapper h3, 
+.editor-styles-wrapper h4, 
+.editor-styles-wrapper h5, 
+.editor-styles-wrapper h6, 
+.editor-styles-wrapper .h1, 
+.editor-styles-wrapper .h2, 
+.editor-styles-wrapper .h3, 
+.editor-styles-wrapper .h4, 
+.editor-styles-wrapper .h5, 
+.editor-styles-wrapper .h6 {
+	font-weight: 700;
+	line-height: 1.2;
+}
+.editor-styles-wrapper h1, .editor-styles-wrapper .h1 { font-size: 62px; line-height: 1.161; }
+.editor-styles-wrapper h2, .editor-styles-wrapper .h2 { font-size: 52px; line-height: 1.192; }
+.editor-styles-wrapper h3, .editor-styles-wrapper .h3 { font-size: 32px; line-height: 1.312; }
+.editor-styles-wrapper h4, .editor-styles-wrapper .h4 { font-size: 24px; line-height: 1.416; }
+.editor-styles-wrapper h5, .editor-styles-wrapper .h5 { font-size: 20px; line-height: 1.500; }
+.editor-styles-wrapper h6, .editor-styles-wrapper .h6 { font-size: 18px; line-height: 1.555; }
+.editor-styles-wrapper .has-large-font-size { line-height: 1.454; }
+.editor-styles-wrapper .has-larger-font-size { line-height: 1.416; }
+.editor-styles-wrapper p { margin: 0 0 1em !important; }

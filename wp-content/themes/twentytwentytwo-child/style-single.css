@@ -1,0 +1,66 @@
+/*single post*/
+.post-content { padding-top: 70px; padding-bottom: 40px; }
+.post-content .yoast-breadcrumbs { font-size: 16px; }
+.post-title { margin-bottom: 30px !important; }
+.post-meta p { margin: 0; }
+.post-meta > div { padding-left: 1.4em; position: relative; }
+.post-meta > div::before { content: ''; font-family: 'Font Awesome 6 Free'; font-weight: 400; position: absolute; left: 0; }
+.post-meta > .wp-block-post-author::before { content: '\f007'; }
+.post-meta > .wp-block-post-date::before { content: '\f133'; }
+.post-meta > .taxonomy-category::before { content: '\f07b'; }
+.post-meta > .taxonomy-post_tag::before { content: '\f02b'; font-weight: 700; }
+.post-meta .wp-block-post-terms a { text-decoration: none; color: var(--wp--preset--color--primary); }
+.post-meta .wp-block-post-terms a:hover { text-decoration: underline; }
+.post-meta-bottom .taxonomy-post_tag { padding-left: 40px; }
+.post-meta-bottom .taxonomy-post_tag::before { top: 13px; }
+.post-meta-bottom .taxonomy-post_tag a { font-weight: 500; font-size: 12px !important; text-transform: uppercase; color: var(--wp--preset--color--primary-dark); border: 1px solid #F2F4F6; padding: 15px; display: inline-block; line-height: 1; margin: 5px 10px 5px 0; text-decoration: none !important; }
+.post-meta-bottom .taxonomy-post_tag a:hover { color: var(--wp--preset--color--primary); border-color: var(--wp--preset--color--primary); }
+.post-meta-bottom .taxonomy-post_tag span { display: none; }
+.post-meta-bottom > div.add-to-any { display: flex; }
+.post-meta-bottom > div.add-to-any .h4 { font-size: 17px; margin: 5px 10px 0 0; }
+
+.wp-block-comments-title { font-size: 36px; }
+.wp-block-comment-content { margin-top: 20px !important; }
+
+.yarpp-related { margin-top: 60px !important; }
+.yarpp-related a { font-weight: unset; text-decoration: underline; }
+.yarpp-related a:hover { text-decoration-style: dashed; }
+
+.sidebar { padding-left: 80px; }
+.sidebar .widget { padding: 50px 30px 40px 30px; box-shadow: 0px 12px 10px rgba(238, 239, 240, 0.25); border: 1px solid #F2F5FA; margin-bottom: 50px; }
+.widget > h3 { font-size: 22px; margin-bottom: 25px; }
+.widget .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper { padding: 0; border: none; background-color: #f2f5fa; }
+.widget .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__input { background-color: transparent; padding: 20px; font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; }
+.widget .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__button { cursor: pointer; padding: 15px; background-color: unset !important; transform: scaleX(-1); }
+.widget .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__button svg { fill: var(--wp--preset--color--primary-dark); }
+.widget .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper .wp-block-search__button:hover svg { fill: var(--wp--preset--color--primary); }
+.widget .wp-block-categories-list { list-style: none; margin: 0; padding: 0; }
+.widget .wp-block-categories-list .cat-item { color: var(--wp--preset--color--primary-dark); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; display: flex; align-items: center; justify-content: space-between; border: 1px solid #F2F5FA; padding: 15px; position: relative; margin-bottom: 10px; }
+.widget .wp-block-categories-list .cat-item:hover { color: var(--wp--preset--color--primary); border-color: var(--wp--preset--color--primary); }
+.widget .wp-block-categories-list .cat-item a { color: inherit !important; text-decoration: none; }
+.widget .wp-block-categories-list .cat-item a::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.widget .wp-block-latest-posts li { clear: both; padding-left: 150px; position: relative; display: flex; flex-direction: column; min-height: 100px; }
+.widget .wp-block-latest-posts li:not(:last-child) { margin-bottom: 20px; }
+.widget .wp-block-latest-posts__featured-image.alignleft { margin-right: 0; float: none; width: 120px; position: absolute; left: 0; top: 0; }
+.widget .wp-block-latest-posts__featured-image img { margin: 0; height: 100px; width: 100%; object-fit: cover; }
+.widget .wp-block-latest-posts__post-date { order: 1; font-weight: 600; font-size: 13px; letter-spacing: 1px; display: block; margin-bottom: 5px; color: #8a879f; }
+.widget .wp-block-latest-posts__post-title { order: 2; text-decoration: none; color: var(--wp--preset--color--primary-dark); font-size: 15px; margin-bottom: 5px; }
+.widget .wp-block-latest-posts__post-title:hover { color: var(--wp--preset--color--primary); }
+.widget .wp-block-latest-posts__post-title::before { content: ''; display: block; position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+.widget .wp-block-latest-posts__post-author { order: 3; color: #707070; text-transform: uppercase; font-size: 10px; letter-spacing: 1px; }
+.widget .wp-block-tag-cloud a.tag-cloud-link { font-weight: 500; font-size: 12px !important; text-transform: uppercase; color: var(--wp--preset--color--primary-dark); border: 1px solid #F2F4F6; padding: 15px; display: inline-block; line-height: 1; margin: 5px 10px 5px 0; text-decoration: none; }
+.widget .wp-block-tag-cloud a.tag-cloud-link:hover { color: var(--wp--preset--color--primary); border-color: var(--wp--preset--color--primary); }
+@media (max-width: 1440px) {
+    .contentbar { flex-basis: 64% !important; }
+    .sidebar { flex-basis: 36% !important; padding-left: 50px; }    
+}
+@media (max-width: 1199px) {
+    .post-content { display: block !important; }
+    .sidebar { padding: 80px 0 0; }
+}
+@media (max-width: 576px) {
+    .widget .wp-block-latest-posts__featured-image.alignleft { width: 100px; }
+    .widget .wp-block-latest-posts__featured-image img { height: 90px; }
+    .widget .wp-block-latest-posts li { padding-left: 120px; min-height: 90px; }
+    .widget .wp-block-latest-posts__post-title { font-size: 13px; }
+}
