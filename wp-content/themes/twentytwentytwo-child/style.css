@@ -468,6 +468,10 @@ footer.wp-block-template-part .copyright a { color: inherit; }
 }
 @media (max-width: 991px) {
     .other-services { grid-template-columns: 1fr 1fr; }
+    .emergency-dentist-services {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
 }
 @media (max-width: 576px) {
     .other-services { grid-template-columns: 1fr; }
