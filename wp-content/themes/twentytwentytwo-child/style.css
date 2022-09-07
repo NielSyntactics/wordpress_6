@@ -362,7 +362,7 @@ footer.wp-block-template-part .copyright a { color: inherit; }
 /* .cta-section-cta .featured-items { margin-top: -250px; position: relative; z-index: 1; }
 .cta-section-cta.md .featured-items { margin-top: -140px; } */
 .cta-section .featured-items { overflow: visible; font-size: 17px; line-height: 1.588; }
-.cta-section .featured-items .gb-block-layout-column  { line-height: 1.588; background: #fff; border-radius: 20px; padding: 40px 30px 30px; margin-bottom: 30px; position: relative; transition: all 0.3s ease-in-out; box-shadow: 4.5px 7.794px 30px 0px rgba(0, 0, 0, 0.1); text-align: center; }
+.cta-section .featured-items .gb-block-layout-column  { line-height: 1.588; background: #fff; border-radius: 20px; padding: 40px 30px 30px; position: relative; transition: all 0.3s ease-in-out; box-shadow: 4.5px 7.794px 30px 0px rgba(0, 0, 0, 0.1); text-align: center; }
 .cta-section .featured-items .gb-block-layout-column .wp-block-image img { width: auto; max-height: 100px; margin: auto; display: block; }
 .cta-section .featured-items .gb-block-layout-column .wp-block-image + h3 { font-size: 24px;  }
 .cta-section .featured-items .gb-block-layout-column p { margin-bottom: 30px; }
@@ -426,12 +426,12 @@ footer.wp-block-template-part .copyright a { color: inherit; }
 @media (min-width: 992px) {
 	.is-style-bordered-services.wp-block-media-text .wp-block-media-text__content { margin-left: 21%; padding: 0; }
 	.is-style-bordered-services.wp-block-media-text.has-media-on-the-right .wp-block-media-text__content { margin-left: 0; margin-right: 20%; }
-	.is-style-bordered-services.wp-block-media-text .wp-block-media-text__media > * { margin-left: 40px; }
+	.is-style-bordered-services.wp-block-media-text .wp-block-media-text__media > * { margin-left: 80px; }
 	.is-style-bordered-services.wp-block-media-text .wp-block-media-text__media::before { background: #f4f4f4; content: ""; display: block; left: 0; height: calc(100% - 100px); position: absolute; top: 50px; width: 70%; z-index: -1; }
 	.is-style-bordered-services.wp-block-media-text .wp-block-media-text__media::after { background-color: #000; content: ""; display: block; height: 5px; position: absolute; left: 0; top: 105px; transform: translateX(-50%); width: 40px; }
 	.is-style-bordered-services.wp-block-media-text.has-media-on-the-right .wp-block-media-text__media::before { right: 0; left: auto; }
 	.is-style-bordered-services.wp-block-media-text.has-media-on-the-right .wp-block-media-text__media::after { right: -35px; left: auto; transform: translateX(-50%); }
-	.is-style-bordered-services.wp-block-media-text.has-media-on-the-right .wp-block-media-text__media > * { margin-left: -40px; }
+	.is-style-bordered-services.wp-block-media-text.has-media-on-the-right .wp-block-media-text__media > * { margin-left: -80px; }
 	.is-style-bordered-services.wp-block-media-text.has-media-on-the-right .wp-block-media-text__media video { margin-left: -90px; }
 }
 
@@ -578,4 +578,49 @@ html .gform_wrapper.gravity-theme .gform_page_footer input { margin-bottom: 0; }
 .tabs .tabs-nav .tab-link { cursor: pointer; border: 0; padding: 24px 120px; background-color: #f2f5fa; color: #8a879f; border-bottom: 4px solid #f0f0f0; text-transform: uppercase; font-weight: 700; font-size: 14px; letter-spacing: 1.4px; }
 .tabs .tabs-nav .tab-link:not(.active):hover { color: #10d0a1; }
 .tabs .tabs-nav .tab-link.active { border-bottom: 4px solid #10d0a1; color: var(--wp--preset--color--primary-dark); box-shadow: 0px 10px 10px rgba(21, 48, 73, 0.1); background-color: #fff; }
+
+
+/* Custom CSS (Iroc)
+******************************************************* */
+
+.wisdom-teeth-heading > mark{ color: #000 !important; }
+
+.style-removed-wisdom { height: min-content; }
+
+.faq-accordion details {
+    position: relative;
+}
+
+.faq-accordion details .gb-accordion-title::after {
+	content: '';
+	display: block;
+	transition: ease-in 0.2s;
+	position: absolute;
+	right: 0;
+	top: .10em;
+	width: 1em;
+	height: 1em;
+	font-size: 40px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-size: contain;
+	background-image: url("data:image/svg+xml,%3Csvg aria-hidden='true' role='img' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 512'%3E%3Cpath fill='%23000' d='M119.5 326.9L3.5 209.1c-4.7-4.7-4.7-12.3 0-17l7.1-7.1c4.7-4.7 12.3-4.7 17 0L128 287.3l100.4-102.2c4.7-4.7 12.3-4.7 17 0l7.1 7.1c4.7 4.7 4.7 12.3 0 17L136.5 327c-4.7 4.6-12.3 4.6-17-.1z' class=''%3E%3C/path%3E%3C/svg%3E");
+    transform: rotate(0);
+}
+
+.faq-accordion details .gb-accordion-title {
+    background: #fff !important;
+    padding: 10px 15px !important;
+    border-bottom: 2px solid #f2f2f2 !important;
+    font-size: 26px !important;
+    font-weight: 700;
+}
+
+.faq-accordion details .gb-accordion-title::marker {
+    content: '';
+}
+
+.faq-accordion details[open] .gb-accordion-title::after {
+    transform: rotate(-180deg);
+}
 
